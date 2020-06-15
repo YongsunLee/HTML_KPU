@@ -1,0 +1,67 @@
+*{
+      margin: 0;
+  }
+
+.footer{
+	background-color: black;
+	width: 100%;
+	height: 60px;
+
+}
+
+.footer p{
+	margin: 0;
+	padding-top: 5px;
+	color: white;
+	text-align: center;
+}
+
+ul.socialIcons {
+  padding: 0;
+  text-align: right;
+  margin: 0px;
+}
+
+.socialIcons li {
+  background-color: yellow;
+  list-style: none;
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 4px;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+.socialIcons li a {
+  display: block;
+  padding: 0.5em;
+  min-width: 1.28571429em;
+  max-width: 1.28571429em;
+  height: 1.28571429em;
+  white-space: nowrap;
+  line-height: 0.5em; /*it's working only when you write text with icon*/
+  transition: 0.5s;
+  text-decoration: none;
+  font-family: arial;
+  color: #fff;
+}
+
+.socialIcons li i {
+  margin-right: 0.8em;
+}
+
+.socialIcons li:hover a {
+  max-width: 200px;
+  padding-right: 1em;
+}
+
+.socialIcons .facebook {
+  background-color: #3b5998;
+  box-shadow: 0 0 16px #3b5998;
+}
+
+.socialIcons .instagram {
+  background-color: #cd486b;
+  box-shadow: 0 0 16px #cd486b;
+}

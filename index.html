@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta charset="UTF-8">
+	<!-- Responsive Viewport Meta Tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<title>Lee-Yongsun</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="css/Navbar.css">
+
+	<!-- CSS -->
+	<style>
+		body {
+			font-family: "Lato";
+		}
+		
+		*{
+			margin: 0;
+		}
+
+		/* 미디어 쿼리 */
+		// Small devices (landscape phones, 576px and up)
+		@media (min-width: 576px) {  }
+
+		// Medium devices (tablets, 768px and up)
+		@media (min-width: 768px) {  }
+
+		// Large devices (desktops, 992px and up)
+		@media (min-width: 992px) {  }
+
+		// Extra large devices (large desktops, 1200px and up)
+		@media (min-width: 1200px) {  }
+
+	</style>
+
+		
+</head>
+<body>
+	<!-- Navigation Bar -->
+	<!-- navbar-expand-md -->
+	<nav class="navbar navbar-dark fixed-top navbar-expand-md" style="background-color: black;">
+		<div class="container">
+			<!-- Title -->
+			<a class="navbar-brand" href="index.html">Logo</a>
+		    
+		    <!-- Toggler -->
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
+				    <div class="bar1"></div>
+				    <div class="bar2"></div>
+				    <div class="bar3"></div>
+		    </button>
+		    
+		    <!-- Toggle List -->
+		    <div class="collapse navbar-collapse" id="navbarToggleExternalContent">
+		        <ul class="navbar-nav ml-auto">
+		            <li class="nav-item">
+		                <a class="nav-link scroll-link" href="./About.html">About</a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link scroll-link" href="./Project.html">Proejct</a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link scroll-link" href="./Paper.html">Paper</a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link scroll-link" href="./Picture.html">Picture</a>
+		            </li>
+		            <li class="nav-item">
+		                <a class="nav-link scroll-link" href="./Contact.html">Contact</a>
+		            </li>
+		        </ul>
+		    </div>
+	    </div>
+	</nav>
+
+	<!-- carousel -->
+	<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+		<!-- Indicators -->
+		<ol class="carousel-indicators">
+			<li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+			<li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+		</ol>
+		
+		<!-- sm inner -->
+		<!-- <div class="carousel-inner .d-none .d-sm-block .d-md-none">
+			<div class="carousel-item active">
+				<img src="./img/temp1.jpg" class="d-block w-100" alt="...">
+				<img src="./img/temp2.jpg" class="d-block w-100" alt="...">
+				<img src="./img/temp3.jpg" class="d-block w-100" alt="...">
+			</div>
+		</div> -->
+
+		<!-- md inner-->
+		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<a href="./Project.html"><img src="./img/temp1.jpg" class="d-block w-100" alt="..."></a>
+				<div class="carousel-caption d-none d-md-block">
+					<h5>First slide label</h5>
+					<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<a href="./Paper.html"><img src="./img/temp2.jpg" class="d-block w-100" alt="..."></a>
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Second slide label</h5>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<a href="./Picture.html"><img src="./img/temp3.jpg" class="d-block w-100" alt="..."></a>
+				<div class="carousel-caption d-none d-md-block">
+					<h5>Third slide label</h5>
+					<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Control -->
+		<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
+	</div>
+
+	<!-- footer -->
+	<div class="footer">
+		<p>Copyright Lee Yong-sun © 2020. All rights reserved.</p>
+		<ul class="socialIcons">
+		  <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100002125488463"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
+		  <li class="instagram "><a href="https://www.instagram.com/hee8ung_pic/"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+		</ul>
+	</div>
+
+	<!-- BootStrap JQuery -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	
+	
+	<script src="./js/Script.js"></script>
+
+</body>
+</html>
+
