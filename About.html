@@ -20,16 +20,77 @@
 		*{
 			margin: 0;
 		}
-		
-		.introduce{
-			height: 855px;
+
+		.helper{
+			height: 56px;
 		}
+
+		.intro_img{
+			overflow: hidden;
+			padding: 0px;
+			position: relative;
+		}
+		
+		.intro_text{
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate( -50%, -50% );
+			color: white;
+		}
+
+		.row{
+			margin: 0px;
+		}
+		
+		.item{
+			padding: 0px;
+		}
+
+		.profile_image{
+			display: block;
+			width: 200px;
+			height: 200px;
+			border-radius: 70%;
+			overflow: hidden;
+
+			box-shadow: 5px 5px 2px 2px black;
+
+			margin-left: auto;
+			margin-right: auto;
+
+			margin-top: 30px;
+			margin-bottom: 30px;
+		}
+
+		.profile_intro{
+			text-align: center;
+		}
+		
+		@media (min-width: 0px) {
+		  .intro_img{
+				height: 300px;
+			}
+		}
+
+		@media (min-width: 768px) {
+		  .intro_img{
+				height: 350px;
+			}
+		}
+		@media (min-width: 992px) {
+			.intro_img{
+				height: 500px;
+			}
+		}
+
 	</style>
 </head>
 <body>
 	<!-- Navigation Bar -->
 	<!-- navbar-expand-md -->
-	<nav class="navbar navbar-dark navbar-expand-md" style="background-color: black;">
+	<nav class="navbar navbar-dark fixed-top navbar-expand-md" style="background-color: black;">
 		<div class="container">
 			<!-- Title -->
 			<a class="navbar-brand" href="index.html">Lee Yong-sun</a>
@@ -68,6 +129,53 @@
 
 	<!-- Introduce -->
 	<div class="introduce">
+		<!-- navbar Fixed로 인한 60px 높이를 가지는 helper -->
+		<div class="helper"></div>
+
+		<div class="intro_img col-lg-12">
+			<div><img class="w-100" src="./img/portrait/yongsun 02.png" alt=""></div>
+			<div class="intro_text col-lg-12">
+				<h1>안녕하세요.</h1>
+				<h2>이용선 입니다.</h2>
+			</div>
+			
+		</div>
+
+		<div class="row">
+			<div class="item col-lg-4 col-sm-6">
+				<div class="profile_image">
+					<img src="./img/Home/LOD.png" alt=""  style="margin-left: -500px; margin-top: -150px;">
+				</div>
+
+				<div class="profile_intro">
+					<h5>게임을 개발하거나</h5>
+					<br>
+					<p>한국산업기술대학교 게임공학과 졸업</p>
+				</div>
+			</div>
+			<div class="item col-lg-4 col-sm-6">
+				<div class="profile_image">
+					<img src="./img/Home/Paper.png" alt="" style="margin-left: -200px; margin-top: -300px;" >
+				</div>
+				<div class="profile_intro">
+					<h5>논문을 작성하거나</h5>
+					<br>
+					<p>한국산업기술대학교 미디어융합디자인 대학원 재학</p>
+				</div>
+			</div>
+			<div class="item col-lg-4 col-sm-6">
+				<div class="profile_image">
+					<img src="./img/portrait/yongsun 01.jpg" alt="" style="margin-left: -550px; margin-top: -250px;">
+				</div>
+				<div class="profile_intro">
+					<h5>사진을 찍기도 한답니다.</h5>
+					<br>
+					<p>한국산업기술대학교 사진 소모임 화양연화 소속</p>
+					<p>인스타그램 Hee8ung_pic 운영</p>
+				</div>
+			</div>
+		</div>
+
 	</div>
 	
 	<!-- footer -->
