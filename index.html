@@ -23,22 +23,9 @@
 			margin: 0;
 		}
 
-		.carousel-item{
+		.carousel-item video {
+			margin-bottom: -6px;
 		}
-
-
-		/* 미디어 쿼리 */
-		// Small devices (landscape phones, 576px and up)
-		@media (min-width: 576px) {  }
-
-		// Medium devices (tablets, 768px and up)
-		@media (min-width: 768px) {  }
-
-		// Large devices (desktops, 992px and up)
-		@media (min-width: 992px) {  }
-
-		// Extra large devices (large desktops, 1200px and up)
-		@media (min-width: 1200px) {  }
 
 	</style>
 
@@ -94,14 +81,19 @@
 		<!-- md inner-->
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<a href="./Project.html"><img src="./img/Home/LOD.png" class="d-block w-100" alt="..."></a>
+				<a href="./Project.html">
+					<video class="video-fluid w-100" src="./video/LegendOfDoodles.mp4" autoplay loop muted></video>
+					<!-- <img src="./img/Home/LOD.png" class="d-block w-100" alt="..."> -->
+				</a>
 				<div class="carousel-caption d-none d-md-block">
 					<h2>Game Developer</h2>
 					<h4>Legend Of Doodles<h4>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<a href="./Paper.html"><img src="./img/Home/Paper.png" class="d-block w-100" alt="..."></a>
+					<video class="video-fluid w-100" src="./video/Image-based Particle Collision System.mp4" autoplay loop muted>
+				    </video>
+					<!-- <img src="./img/Home/Paper.png" class="d-block w-100" alt="..."> -->
 				<div class="carousel-caption d-none d-md-block">
 					<h2>Paper</h2>
 					<h4>Image-based Particle Collision System<h4>
