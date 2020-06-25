@@ -15,14 +15,188 @@
 	<style>
 		body {
 			font-family: "Lato";
+			overflow-x: hidden;
 		}
 
 		*{
 			margin: 0;
 		}		
+
+		.helper{
+			height: 56px;
+		}
 		
 		.Contact{
-			height: 100px;
+		}
+
+		.header {
+		    width: 100%;
+		    display: block;
+		    font-family: Poppins-Regular;
+		    font-size: 30px;
+		    color: #333333;
+		    line-height: 1.2;
+		    text-align: center;
+		    padding-bottom: 33px;
+		    margin-top: 10px;
+		}
+
+		.picture{
+			width: 100%;
+				
+			background-image: url('./img/portrait/yongsun 01.jpg');
+			background-repeat: none;
+			background-position: top left;
+			height: 854px;
+		}
+
+		.text{
+			width: 100%;
+			padding: 25px;
+			height: 854px;
+		}
+
+		.text .header{
+			text-align: center;
+		}
+
+		input.input100 {
+		    height: 55px;
+		}
+
+		.input100{
+			display: block;
+		    width: 100%;
+		    background: transparent;
+		    font-family: Poppins-Regular;
+		    font-size: 18px;
+		    color: #666666;
+		    line-height: 1.2;
+		    padding: 0 25px;
+			border: 1px solid #e6e6e6;
+		}
+
+		.label-input100{
+			font-family: Poppins-Regular;
+		    font-size: 12px;
+		    color: #555555;
+		    line-height: 1.5;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    align-items: center;
+		    width: 100%;
+		    min-height: 55px;
+		    border: 1px solid #e6e6e6;
+		    border-bottom: none;
+		    padding: 10px 25px;
+		    margin-top: 15px;
+		    margin-bottom: 0;
+		}
+
+		.wrap-input100{
+			width: 100%;
+		    position: relative;
+			border: 1px solid #e6e6e6;
+		} 
+
+		.rs1-wrap-input100{
+			width: 50%;
+		} 
+		.validate-input{
+			position: relative;
+		}
+
+		textarea.input100 {
+		    min-height: 139px;
+		    padding-top: 19px;
+		    padding-bottom: 15px;
+		}
+
+		.container-contact100-form-btn {
+		    width: 100%;
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    flex-wrap: wrap;
+		    justify-content: center;
+		    padding-top: 23px;
+		}
+
+		.contact100-form-btn {
+		    display: -webkit-box;
+		    display: -webkit-flex;
+		    display: -moz-box;
+		    display: -ms-flexbox;
+		    display: flex;
+		    justify-content: center;
+		    align-items: center;
+		    padding: 0 20px;
+		    min-width: 200px;
+		    height: 50px;
+		    border-radius: 2px;
+		    border-color: white;
+		    background: #00ad5f;
+		    font-family: Montserrat-Bold;
+		    font-size: 12px;
+		    color: #fff;
+		    line-height: 1.2;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		    -webkit-transition: all 0.4s;
+		    -o-transition: all 0.4s;
+		    -moz-transition: all 0.4s;
+		    transition: all 0.4s;
+		}
+		
+		.lnr {
+		  display: inline-block;
+		  fill: currentColor;
+		  width: 1em;
+		  height: 1em;
+		  vertical-align: -0.05em;
+		}
+
+		.lnr-apartment {
+		  color: white;
+		  font-size: 40px;
+		}
+
+		.lnr-user {
+		  color: white;
+		  font-size: 40px;
+		}
+		
+		.lnr-envelope {
+		  color: white;
+		  font-size: 40px;
+		}
+	
+		.pic-mark{
+			display: inline-block;
+		}
+
+		.pic-mark-text{
+			display: inline-block;
+			color: white;
+		}
+		
+		.sub-info{
+			margin-top: 20px;
+			margin-left: 50px;
+
+			padding: 5px;
+
+		}
+
+		.sub-info:first-child{
+			margin-top: 50px;
 		}
 
 	</style>
@@ -67,15 +241,108 @@
 	    </div>
 	</nav>
 
-	<!-- Contact -->
-	<div class="Contact"></div>
+	<!-- navbar height -->
+	<div class="helper"></div>
+	
+	<div class="row">
+		<div class="picture col-lg-6 col-sm-6">
+			<div class="sub-info col-lg-10 col-sm-6">
+				<div class="pic-mark">
+					<svg class="lnr lnr-apartment"><use xlink:href="#lnr-apartment"></use></svg>
+				</div>
+				<div class="pic-mark-text">
+					<h6>KOREA POLYTECHNIC UNIVERSITY TIP 511</h6>
+					<p>15073 경기도 시흥시 산기대학로 237 한국산업기술대학교</p>
+				</div>
+			</div>
+			
+			<div class="sub-info col-lg-10 col-sm-6">
+				<div class="pic-mark ">
+					<svg class="lnr lnr-user"><use xlink:href="#lnr-user"></use></svg>
+				</div>
+				<div class="pic-mark-text">
+					<h6>Instagram DM</h6>
+					<p>@Hee8ung_pic</p>
+				</div>
+			</div>
+
+			<div class="sub-info col-lg-10 col-sm-6">
+				<div class="pic-mark">
+					<svg class="lnr lnr-envelope"><use xlink:href="#lnr-envelope"></use></svg>
+				</div>
+				<div class="pic-mark-text">
+					<h6>General Support</h6>
+					<p>katarite715@naver.com</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="text col-lg-6 col-sm-6">
+			<!-- head -->
+			<div class="header">
+				<h1>Send Me A Message</h1>
+			</div>
+			
+			<!-- name -->
+			<form>
+			  <div class="form-row">
+			    <label class="label-input100" for="first-name">Tell us your name *</label>
+			    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+			    	<input id="first-name" class="input100" type="text" name="first-name" placeholder="First-name">
+			    </div>
+			    <div class="wrap-input100 rs1-wrap-input100 validate-input">
+			        <input class="input100" type="text" name="last-name" placeholder="Last name">
+			    </div>
+			  </div>
+			</form>
+
+			<!-- email -->
+			<form>
+			  <div class="form-row">
+			    <label class="label-input100" for="email">Enter your email *</label>
+			    <div class="wrap-input100 validate-input">
+			    	<input id="email" class="input100" type="text" name="email" placeholder="Eg.example@email.com">
+			    </div>
+			  </div>
+			</form>
+			
+			<!-- phone -->
+			<form>
+			  <div class="form-row">
+			    <label class="label-input100" for="phone">Enter phone number</label>
+			    <div class="wrap-input100">
+			    	<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +82 10 0000 0000">
+			    </div>
+			  </div>
+			</form>
+			
+			<!-- message -->
+			<form>
+			  <div class="form-row">
+			    <label class="label-input100" for="message">Message *</label>
+			    <div class="wrap-input100 validate-input">
+			    	<textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+			    </div>
+			  </div>
+			</form>
+
+			<!-- btn -->
+			<div class="container-contact100-form-btn">
+				<button class="contact100-form-btn">
+					Send Message
+				</button>
+			</div>
+		</div>
+	</div>
+		
 
 	<!-- footer -->
-	<div class="footer">
+	<div class="footer col-12">
 		<p>Copyright Lee Yong-sun © 2020. All rights reserved.</p>
 		<ul class="socialIcons">
 		  <li class="facebook"><a href="https://www.facebook.com/profile.php?id=100002125488463"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
 		  <li class="instagram "><a href="https://www.instagram.com/hee8ung_pic/"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
+		  <li class="github "><a href="https://github.com/YongsunLee"><i class="fa fa-fw fa-instagram"></i>Github</a></li>
 		</ul>
 	</div>
 
@@ -85,5 +352,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 	<script src="./js/Script.js"></script>
+
+	<!--  -->
+	<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
 </body>
 </html>

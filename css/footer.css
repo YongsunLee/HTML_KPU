@@ -65,3 +65,8 @@ ul.socialIcons {
   background-color: #cd486b;
   box-shadow: 0 0 16px #cd486b;
 }
+
+.socialIcons .github {
+  background-color: purple;
+  box-shadow: 0 0 16px purple;
+}
