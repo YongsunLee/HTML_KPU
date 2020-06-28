@@ -29,7 +29,10 @@
 		.carousel-item video {
 			margin-bottom: -6px;
 		}
-
+		.carousel-caption{
+			top: 60%;
+			transform: translateY(-50%);
+		}
 	</style>
 
 		
@@ -84,31 +87,34 @@
 		<!-- md inner-->
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<a href="./Project.html">
-					<video class="video-fluid w-100" src="./video/LegendOfDoodles.mp4" autoplay loop muted></video>
-					<!-- <img src="./img/Home/LOD.png" class="d-block w-100" alt="..."> -->
-				</a>
-				<div class="carousel-caption d-none d-md-block">
-					<h2>Game Developer</h2>
-					<h4>Legend Of Doodles<h4>
-				</div>
+				<video class="video-fluid w-100" src="./video/LegendOfDoodles.mp4" autoplay loop muted></video>
+				<div class="container">
+	              <div class="carousel-caption text-left">
+	                <h1>Game Developer</h1>
+	                <p>Legend of Doodles</p>
+	                <p><a class="btn btn-lg btn-outline-warning" href="./Project.html" role="button">Project</a></p>
+	              </div>
+	            </div>
 			</div>
 			<div class="carousel-item">
-				<a href="./Paper.html">
-					<video class="video-fluid w-100" src="./video/Image-based Particle Collision System.mp4" autoplay loop muted></video>
-				</a>
-					<!-- <img src="./img/Home/Paper.png" class="d-block w-100" alt="..."> -->
-				<div class="carousel-caption d-none d-md-block">
-					<h2>Paper</h2>
-					<h4>Image-based Particle Collision System<h4>
-				</div>
+				<video class="video-fluid w-100" src="./video/Image-based Particle Collision System.mp4" autoplay loop muted></video>
+				<div class="container">
+	              <div class="carousel-caption">
+	                <h1 style="color:black;">Paper</h1>
+	                <p  style="color:black;">Image-based Particle Collision System</p>
+	                <p><a class="btn btn-lg btn-outline-primary" href="./Paper.html" role="button">Paper</a></p>
+	              </div>
+	            </div>
 			</div>
 			<div class="carousel-item">
-				<a href="./Picture.html"><img src="./img/Home/Photo.jpg" class="d-block w-100" alt="..."></a>
-				<div class="carousel-caption d-none d-md-block">
-					<h2>Photographer</h2>
-					<h4>Hee8ung_Pic<h4>
-				</div>
+				<img src="./img/Home/Photo.jpg" class="d-block w-100" alt="...">
+				<div class="container">
+	              <div class="carousel-caption text-right">
+	                <h1>Photographer</h1>
+	                <p>Hee8ung_Pic</p>
+	                <p><a class="btn btn-lg btn-outline-danger" href="./Picture.html" role="button">Photo</a></p>
+	              </div>
+	            </div>
 			</div>
 		</div>
 

@@ -7,6 +7,8 @@
 
 	<!-- Bootstrap CSS-->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Font Awesome CDN -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<title>Paper</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/footer.css">
@@ -27,20 +29,12 @@
 		.carousel {
 			margin-bottom: 4rem;
 		}
-		/* Since positioning the image, we need to help out the caption */
+
 		.carousel-caption {
 			bottom: 3rem;
 			z-index: 10;
 		}
 
-		/* Declare heights because of positioning of img element */
-		.carousel-item {
-			height: 432px;
-		}
-
-		/* MARKETING CONTENT
-		-------------------------------------------------- */
-		/* Center align the text within the three columns below the carousel */
 		.marketing .col-lg-4 {
 			margin-bottom: 1.5rem;
 			text-align: center;
@@ -53,72 +47,27 @@
 			margin-left: .75rem;
 		}
 
-		/* Featurettes
-		------------------------- */
 		.featurette-divider {
-			margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+			margin: 5rem 0;
 		}
 
-		/* Thin out the marketing headings */
 		.featurette-heading {
 			font-weight: 300;
 			line-height: 1;
 			letter-spacing: -.05rem;
 		}
-
-		/*iphone 8*/
-		@media(min-width: 0px){
-			.carousel-item {
-				height: 210px;
-			}
-		}
-		
-		/*iphone 8 plus*/
-		@media(min-width: 414px){
-			.carousel-item {
-				height: 232px;
-			}
-		}
-
-		/*ipad*/
-		@media(min-width: 768px){
-			.carousel-item {
-				height: 432px;
-			}
-		}
-		
-		/*ipad Pro*/
-		@media(min-width: 1024px){
-			.carousel-item {
-				height: 576px;
-			}
-		}
-		
-		/*PC*/
-		@media(min-width: 1200px){
-			.carousel-item {
-				height: 900px;
-			}
-		}
-		/*PC*/
-
-		@media(min-width: 1500px){
-			.carousel-item {
-				height: 1100px;
-			}
-		}
 		
 		@media (min-width: 40em) {
-        .featurette-heading {
-          font-size: 50px;
-        }
-      }
+	        .featurette-heading {
+	          font-size: 50px;
+	        }
+	    }
 
-      @media (min-width: 62em) {
-        .featurette-heading {
-          margin-top: 7rem;
+        @media (min-width: 62em) {
+	        .featurette-heading {
+	          margin-top: 7rem;
+	        }
         }
-      }
 
 	</style>
 </head>
@@ -172,13 +121,13 @@
           <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-          <div class="carousel-item active">
+          <div class="carousel-item h-100 active">
 			<video class="video-fluid w-100" src="./video/paper/1.mp4" autoplay loop muted></video>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item h-100">
 			<video class="video-fluid w-100" src="./video/paper/2.mp4" autoplay loop muted></video>
           </div>
-          <div class="carousel-item">
+          <div class="carousel-item h-100">
 			<video class="video-fluid w-100" src="./video/paper/3.mp4" autoplay loop muted></video>
           </div>
         </div>
