@@ -70,3 +70,9 @@ ul.socialIcons {
   background-color: purple;
   box-shadow: 0 0 16px purple;
 }
+
+@media (max-width: 380px) {
+      .footer p{
+        font-size: 5px;
+      }
+    }
