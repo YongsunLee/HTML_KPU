@@ -22,8 +22,104 @@
 		}
 
 		.Paper{
-			height: 100px;
-		}		
+		}
+
+		.carousel {
+			margin-bottom: 4rem;
+		}
+		/* Since positioning the image, we need to help out the caption */
+		.carousel-caption {
+			bottom: 3rem;
+			z-index: 10;
+		}
+
+		/* Declare heights because of positioning of img element */
+		.carousel-item {
+			height: 432px;
+		}
+
+		/* MARKETING CONTENT
+		-------------------------------------------------- */
+		/* Center align the text within the three columns below the carousel */
+		.marketing .col-lg-4 {
+			margin-bottom: 1.5rem;
+			text-align: center;
+		}
+		.marketing h2 {
+			font-weight: 400;
+		}
+		.marketing .col-lg-4 p {
+			margin-right: .75rem;
+			margin-left: .75rem;
+		}
+
+		/* Featurettes
+		------------------------- */
+		.featurette-divider {
+			margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+		}
+
+		/* Thin out the marketing headings */
+		.featurette-heading {
+			font-weight: 300;
+			line-height: 1;
+			letter-spacing: -.05rem;
+		}
+
+		/*iphone 8*/
+		@media(min-width: 0px){
+			.carousel-item {
+				height: 210px;
+			}
+		}
+		
+		/*iphone 8 plus*/
+		@media(min-width: 414px){
+			.carousel-item {
+				height: 232px;
+			}
+		}
+
+		/*ipad*/
+		@media(min-width: 768px){
+			.carousel-item {
+				height: 432px;
+			}
+		}
+		
+		/*ipad Pro*/
+		@media(min-width: 1024px){
+			.carousel-item {
+				height: 576px;
+			}
+		}
+		
+		/*PC*/
+		@media(min-width: 1200px){
+			.carousel-item {
+				height: 900px;
+			}
+		}
+		/*PC*/
+
+		@media(min-width: 1500px){
+			.carousel-item {
+				height: 1100px;
+			}
+		}
+		
+		@media (min-width: 40em) {
+        .featurette-heading {
+          font-size: 50px;
+        }
+      }
+
+      @media (min-width: 62em) {
+        .featurette-heading {
+          margin-top: 7rem;
+        }
+      }
+
 	</style>
 </head>
 <body>
@@ -68,6 +164,97 @@
 
 	<!-- Paper -->
 	<div class="Paper"></div>
+
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+			<video class="video-fluid w-100" src="./video/paper/1.mp4" autoplay loop muted></video>
+          </div>
+          <div class="carousel-item">
+			<video class="video-fluid w-100" src="./video/paper/2.mp4" autoplay loop muted></video>
+          </div>
+          <div class="carousel-item">
+			<video class="video-fluid w-100" src="./video/paper/3.mp4" autoplay loop muted></video>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+	
+	<div class="container marketing">
+        <!-- Three columns of text below the carousel -->
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./img/logo/paper/rs.png" alt="1" width="150" height="150">
+            <h2>Particle Collision</h2>
+            <p>파티클과 파티클간의 충돌</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./img/logo/paper/cdt.png" alt="Generic placeholder image" width="150" height="150">
+            <h2>Image-based</h2>
+            <p>이미지를 기반으로 구현</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="rounded-circle" src="./img/logo/paper/opengl.png" alt="Generic placeholder image" width="150" height="150">
+            <h2>OpenGL</h2>
+            <p>OpenGL을 통한 구현</p>
+          </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+	<!-- START THE FEATURETTES -->
+		<!-- 구분선 -->
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">Particle Collision <br> <span class="text-muted">Between particles.</span></h2>
+            <p class="lead">Collisions between particles and objects have been studied and used. Parts that require large amounts of computation, such as collisions between particles and particles, are sometimes omitted in real-time rendering environments, such as games.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="./img/logo/paper/rs.png" alt="Render Scene">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7 order-md-2">
+            <h2 class="featurette-heading">Image-based <br> <span class="text-muted">Collision Detection Texture.</span></h2>
+            <p class="lead">Currently, commercial game engines use a lot of methods to process collision between particles and objects through depth buffer. The method of projecting a three-dimensional image onto a two-dimensional image was adopted using the approach through Image, which is an advantage of this method.</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img class="featurette-image img-fluid mx-auto" src="./img/logo/paper/cdt.png" alt="CDT">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+          <div class="col-md-7">
+            <h2 class="featurette-heading">OpenGL</h2>
+            <p class="lead">The research project was implemented using OpenGL. The project goes through a two-step algorithm. The first step is to process the collision and update the particle position, speed, direction, etc. The second step is responsible for rendering the screen.</p>
+          </div>
+          <div class="col-md-5">
+            <img class="featurette-image img-fluid mx-auto" src="./img/logo/paper/vs.png" alt="Generic placeholder image">
+          </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+	</div>
 
 	<!-- footer -->
 	<div class="footer">
